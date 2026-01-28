@@ -31,7 +31,7 @@ for i in range(100,1000):  #ezekbe (vagyis az i ben) van a 100-999 de az utso ne
 
 true_3_jegyuk_atlaga= sum(true_3_jegyuk) / len(true_3_jegyuk) #atlag = sum/ darabszam és a darabszam = a lista hosszával
 
-print(true_3_jegyuk_atlaga) 
+print(f'A 7-tel osztható és 3-mal nem osztható 3 jegyű számok átlaga:{true_3_jegyuk_atlaga}') 
 
 #///////////////////////////////////
 
