@@ -70,10 +70,12 @@ else:
 	# Faludy György
 	# Maurice Druon
 
-idosebb_mint_90 = []
+idosebb_mint_90 = set()
 
 for konyv in konyvek:
     if (konyv['halEv'] - konyv['szulEv']) > 90 :
-        idosebb_mint_90.append(konyv['nev'])
+        idosebb_mint_90.add(konyv['nev'])
 
-print(f'90 évesnél idősebb írók: {idosebb_mint_90}')
+print(f'90 évesnél idősebb írók:')
+for iro in idosebb_mint_90:
+    print('\t'+ iro)
